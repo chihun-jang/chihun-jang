@@ -41,6 +41,5 @@ jobs:
         with:
           target_branch: output
           build_dir: dist
-          repo_token: "{{secret.token}}"
         env:
-          GITHUB_TOKEN: $
+          GITHUB_TOKEN: "${{secret.TOKEN}}"
